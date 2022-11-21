@@ -36,6 +36,7 @@ class LoginSerializer(serializers.ModelSerializer):
         if not user.is_active:
             raise AuthenticationError('Account disable')
         """
+        =>ToDo
         if not user.is_verified:
             raise AuthenticationError('Email is not verified')
         """
